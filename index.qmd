@@ -1,0 +1,19 @@
+---
+title: "5SMC0 Control Principles"
+subtitle: "Course Overview & Lectures"
+listing:
+  contents: 
+    - "Notes/Lecture*.ipynb"    # Catches Lecture1.ipynb, Lecture2.ipynb, etc.
+    - "Notes/Project*.ipynb"    # Catches Project files if you have them
+  type: table             # Options: default, table, grid
+  sort: "filename"        # Sorts by file name (Lecture1, Lecture2...)
+  fields: [title, date]
+  filter-ui: false
+  sort-ui: false
+---
+
+## Welcome to the Course
+
+Welcome to the **Control Principles for Engineered Systems** course hub. Below you will find the lecture notes and computational notebooks used in class.
+
+## Course Material

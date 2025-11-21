@@ -1,0 +1,11 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "Lecture*.ipynb",
+      "Project*.ipynb",
+      "Notes/Lecture*.ipynb",
+      "Notes/Project*.ipynb",
+      "Notes/Lecture1.ipynb"
+    ]
+  }
+}

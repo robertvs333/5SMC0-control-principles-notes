@@ -1,0 +1,16 @@
+project:
+  type: website
+
+format:
+  html:
+    theme: cosmo        # or whatever theme you are using
+    css: styles.css     # <--- Add this line
+    toc: true
+    
+website:
+  title: "5SMC0 Control principles for engineering systems"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+  

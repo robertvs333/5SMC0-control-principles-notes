@@ -1,0 +1,62 @@
+/* styles.css */
+
+/* Target the Note Callout specifically */
+div.callout-note {
+  border-left: none !important; /* Remove the default thick left border */
+  border: 1px solid #24296e;    /* Thin border matching the header */
+  border-radius: 0.25rem;       /* Slight rounding */
+  overflow: hidden;             /* Keeps the background inside the curves */
+}
+
+/* Style the Header (The Dark Bar) */
+div.callout-note .callout-header {
+  background-color: #24296e !important; 
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Style the Body (The Light Background) */
+div.callout-note .callout-body-container {
+  background-color: #f2f3f9 !important;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* Optional: Change the icon color to white so it stands out on dark blue */
+div.callout-note .callout-icon {
+  filter: brightness(0) invert(1); /* Turns the icon white */
+}
+
+/* Custom Warning Callout Styling - HIGH SPECIFICITY FIX */
+
+/* 1. Target the Callout Wrapper */
+.callout-warning.callout-style-custom {
+  /* Use the working structural styling from the Note */
+  border: 1px solid #e65100 !important; /* Orange border */
+  border-left: none !important;
+  border-radius: 0.25rem !important;
+  overflow: hidden !important;
+  
+  /* Reset Quarto's internal background variable if it exists */
+  --callout-color: #e65100 !important; 
+  --callout-bg: #fff8e1 !important; 
+}
+
+/* 2. Style the Header (The Dark Orange Bar) */
+.callout-warning.callout-style-custom .callout-header {
+  background-color: #e65100 !important; /* Dark Orange */
+  color: white !important;
+  font-weight: bold !important;
+}
+
+/* 3. Style the Body (The Light Orange Background) */
+.callout-warning.callout-style-custom .callout-body-container {
+  background-color: #fff8e1 !important; /* Light Orange */
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+
+/* 4. Style the Icon to be White */
+.callout-warning.callout-style-custom .callout-icon {
+  filter: brightness(0) invert(1) !important; 
+}
