@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5SMC0 Control Principles – 5SMC0 Control principles for engineering systems</title>
+<title>Module 3 Safe control – 5SMC0 Control principles for engineering systems</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -130,7 +99,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -140,7 +109,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">5SMC0 Control principles for engineering systems</span>
     </a>
   </div>
@@ -151,7 +120,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -170,8 +139,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-the-course" id="toc-welcome-to-the-course" class="nav-link active" data-scroll-target="#welcome-to-the-course">Welcome to the Course</a></li>
-  <li><a href="#course-material" id="toc-course-material" class="nav-link" data-scroll-target="#course-material">Course Material</a></li>
+  <li><a href="#control-lyapunov-functions-clf" id="toc-control-lyapunov-functions-clf" class="nav-link active" data-scroll-target="#control-lyapunov-functions-clf">Control Lyapunov Functions (CLF)</a></li>
+  <li><a href="#quadratic-program-qp-overview" id="toc-quadratic-program-qp-overview" class="nav-link" data-scroll-target="#quadratic-program-qp-overview">📐 Quadratic Program (QP) Overview</a></li>
+  <li><a href="#safety" id="toc-safety" class="nav-link" data-scroll-target="#safety">Safety</a></li>
   </ul>
 </nav>
     </div>
@@ -180,8 +150,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">5SMC0 Control Principles</h1>
-<p class="subtitle lead">Course Overview &amp; Lectures</p>
+<h1 class="title">Module 3 Safe control</h1>
 </div>
 
 
@@ -198,58 +167,213 @@ window.Quarto = {
 </header>
 
 
-<section id="welcome-to-the-course" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-to-the-course">Welcome to the Course</h2>
-<p>Welcome to the <strong>Control Principles for Engineered Systems</strong> course hub. Below you will find the lecture notes and computational notebooks used in class.</p>
+<section id="control-lyapunov-functions-clf" class="level2">
+<h2 class="anchored" data-anchor-id="control-lyapunov-functions-clf">Control Lyapunov Functions (CLF)</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Definition: Control Lyapunov Function (CLF)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Definition: Control Lyapunov Function (CLF)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consider a nonlinear system <span class="math display">\[
+\dot{x} = F(x, u)
+\]</span> A continuously differentiable function <span class="math inline">\(V: D \to \mathbb{R}\)</span>, where <span class="math inline">\(0 \in D\)</span>, is an <strong>asymptotically stabilizing control Lyapunov function (CLF)</strong> for <span class="math inline">\(\dot{x} = F(x, u)\)</span> if:</p>
+<ul>
+<li><span class="math inline">\(V(0) = 0\)</span>, and <span class="math inline">\(V(x) &gt; 0, \quad \forall x \in D \text{ with } x \ne 0\)</span> (i.e., <span class="math inline">\(V\)</span> is positive definite).</li>
+<li><span class="math inline">\(\exists u \in U\)</span>, such that <span class="math inline">\(\dot{V}(x, u) &lt; 0, \quad \forall x \in D \text{ with } x \ne 0\)</span>.</li>
+</ul>
+<p>This second condition is equivalent to: <span class="math display">\[
+\inf_{u \in U} \dot{V}(x, u) &lt; 0
+\]</span></p>
+</div>
+</div>
+<p>To make it exponentially stabilizing CLF another constraint is needed and some needed to be altered:</p>
+<ul>
+<li><span class="math inline">\(k_1\|x\|^a \le V(x) \le k_2\|x\|^a\)</span></li>
+<li><span class="math inline">\(\exists u \in U\)</span>, s.t. <span class="math inline">\(\dot{V}(x, u) + k_3V(x) \le 0, \quad \forall x \in D \text{ with } x \ne 0\)</span>.</li>
+</ul>
+<p>This second condition is equivalent to: <span class="math display">\[
+\inf_{u \in U} \left[ \dot{V}(x, u) + k_3V(x) \right] \le 0
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example: Stabilization of a Linear System via CLF">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example: Stabilization of a Linear System via CLF
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consider a linear system: <span class="math display">\[
+\dot{x} = Ax + Bu.
+\]</span> Choose a quadratic Lyapunov function: <span class="math display">\[
+V(x) = x^T Px, \quad P &gt; 0.
+\]</span> The CLF condition requires finding a control <span class="math inline">\(u\)</span> such that the time derivative <span class="math inline">\(\dot{V}(x)\)</span> satisfies the exponential decay criterion: <span class="math display">\[
+{V}(x)=\frac{\delta{V}}{(\delta x)}\dot{x}
+\]</span> <span class="math display">\[
+\dot{V}(x) = x^T(PA + A^T P)x + 2x^T PBu \le -c_3V(x).
+\]</span> This condition must hold for some positive constant <span class="math inline">\(c_3\)</span>. The inequality helps define the minimum required control effort <span class="math inline">\(u\)</span>.</p>
+</div>
+</div>
+<p>In control affine system the equation looks something like this:</p>
+<p>Consider a nonlinear control system in the <strong>control-affine form</strong>: <span class="math display">\[
+\dot{x} = \underbrace{f(x)}_{\text{drift term / autonomous vector field}} + \underbrace{g(x)u}_{\text{actuation effect / control vector field}}
+\]</span> where <span class="math inline">\(f: \mathbb{R}^n \to \mathbb{R}^n\)</span> and <span class="math inline">\(g: \mathbb{R}^n \to \mathbb{R}^{n \times m}\)</span> are <strong>locally Lipschitz continuous in <span class="math inline">\(x\)</span></strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definition (CLF for Control Affine Systems)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Definition (CLF for Control Affine Systems)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A continuously differentiable function <span class="math inline">\(V: \mathbb{R}^n \to \mathbb{R}\)</span> is an <strong>exponentially stabilizing CLF</strong> for <span class="math display">\[
+\dot{x} = f(x) + g(x)u
+\]</span> if there exist constants <span class="math inline">\(c_1, c_2, c_3 &gt; 0\)</span> such that:</p>
+<p><span class="math display">\[
+c_1\|x\|^2 \le V(x) \le c_2\|x\|^2,
+\]</span> and <span class="math display">\[
+\inf_{u \in U} \left[ L_f V(x) + L_g V(x)u + c_3V(x) \right] \le 0, \quad \forall x \in \mathbb{R}^n.
+\]</span></p>
+</div>
+</div>
 </section>
-<section id="course-material" class="level2">
-<h2 class="anchored" data-anchor-id="course-material">Course Material</h2>
-
-
-
+<section id="quadratic-program-qp-overview" class="level2">
+<h2 class="anchored" data-anchor-id="quadratic-program-qp-overview">📐 Quadratic Program (QP) Overview</h2>
+<ul>
+<li><p>A <strong>Quadratic Program (QP)</strong> solves the optimization problem: <span class="math display">\[
+  \min_{x \in \mathbb{R}^n} \frac{1}{2} x^T Qx + c^T x \quad \text{subject to } Ax \le b
+  \]</span></p></li>
+<li><p>The objective is quadratic in <span class="math inline">\(x\)</span> and the constraints are linear inequalities, where:</p>
+<ul>
+<li><span class="math inline">\(Q \in \mathbb{R}^{n \times n}\)</span>: <strong>symmetric, positive semidefinite matrix</strong></li>
+<li><span class="math inline">\(c \in \mathbb{R}^n\)</span>: <strong>linear term</strong></li>
+<li><span class="math inline">\(A \in \mathbb{R}^{m \times n}, b \in \mathbb{R}^m\)</span>: <strong>inequality constraints</strong></li>
+</ul></li>
+<li><p>The QP is <strong>convex</strong> if <span class="math inline">\(Q \succeq 0\)</span> (positive semidefinite), ensuring a <strong>unique global optimum</strong>.</p></li>
+<li><p>Additional constraints like equalities and bounds can be included.</p></li>
+<li><p>QPs can be solved efficiently using MATLAB QP Solvers or Optimization Toolboxes, e.g., <code>quadprog</code>, <code>fmincon</code>, CVX.</p></li>
+</ul>
 </section>
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table">
+<section id="safety" class="level2">
+<h2 class="anchored" data-anchor-id="safety">Safety</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Definition (Safety)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Definition (Safety)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\(X\)</span> be the state space and <span class="math inline">\(X_u \subset X\)</span> be the <strong>unsafe set</strong>. The system <span class="math inline">\(\dot{x} = f(x)\)</span> is <strong>safe with respect to set <span class="math inline">\(S \subset X\)</span></strong> if:</p>
+<ul>
+<li><span class="math inline">\(S \cap X_u = \emptyset\)</span>, and</li>
+<li>it is forward invariant with respect to <span class="math inline">\(\dot{x} = f(x)\)</span>.</li>
+</ul>
+</div>
+</div>
+<p>```http://googleusercontent.com/image_generation_content/0</p>
+<p><span class="math inline">\(X_u\)</span> is just the set in which the system is not safe anymore. The set S is referred to as a safe set</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Nagumo's Theorem">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Nagumo’s Theorem
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Consider the safe set <span class="math inline">\(S := \{x \in \mathbb{R}^n \mid h(x) \ge 0\}\)</span>.</p>
+<ul>
+<li><p><strong>Nagumo’s Theorem:</strong> If <span class="math inline">\(h(x(0)) \ge 0\)</span> (the system starts safe) and <span class="math display">\[
+  \dot{h}(x) \ge 0 \quad \text{for all } x \in \partial S,
+  \]</span> then <span class="math inline">\(h(x(t)) \ge 0\)</span> for all <span class="math inline">\(t \ge 0\)</span>; that is, the safe set <span class="math inline">\(S\)</span> is <strong>forward invariant</strong>.</p></li>
+<li><p><strong>Interpretation:</strong> This theorem certifies that if the system starts safe, then it remains safe.</p></li>
+</ul>
+</div>
+</div>
+<p>However this could lead that whenever a function nears the boundary the boundary make the function bounce. So therefore a softer should be applied. This can be done by applying the following.</p>
+<p><span class="math display">\[\dot{h}(x, u) \geq -\gamma h(x) \quad \text{for all } x \in S\]</span></p>
+<p>This function is also called a barrier function. The definition for this is given as:</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Definition: Control Barrier Function (CBF)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Definition: Control Barrier Function (CBF)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A continuously differentiable function <span class="math inline">\(b(x)\)</span> is a <strong>Control Barrier Function</strong> for <span class="math display">\[
+\dot{x} = f(x) + g(x)u,
+\]</span> if there exists <span class="math inline">\(\gamma &gt; 0\)</span> such that <span class="math display">\[
+\sup_{u \in U} \left[ L_f b(x) + L_g b(x)u + \gamma b(x) \right] \ge 0, \quad \forall x \in C,
+\]</span> and we assume that <span class="math inline">\(L_g b(x) \ne 0\)</span> when <span class="math inline">\(b(x) = 0\)</span>.</p>
+</div>
+</div>
+<p>this <span class="math inline">\(\sup_{u \in U}\)</span> is a generalized version of maximum. <span class="math inline">\(L_gb(x)\)</span> should not be 0 because otherwise it wouldn’t be able to to interact with u and therofere the controller doesn’t do anything</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Key Comparison: Safety vs. Stability">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Key Comparison: Safety vs.&nbsp;Stability
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
-<tr>
-
-<th>
-Title
-</th>
-
-<th>
-Date
-</th>
-
+<tr class="header">
+<th style="text-align: left;">Safety (CBFs)</th>
+<th style="text-align: left;">Stability (CLFs)</th>
 </tr>
 </thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1698192000000" data-listing-file-modified-sort="1763977756745" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9" data-listing-word-count-sort="1776" data-listing-title-sort="Module 2: Stability Analysis" data-listing-filename-sort="Lecture3.ipynb">
-<td>
-<a href="./Notes/Lecture3.html" class="title listing-title">Module 2: Stability Analysis</a>
-</td>
-<td>
-<span class="listing-date">Oct 25, 2023</span>
-</td>
-
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Enforced via <strong>CBFs</strong> (Control Barrier Functions).</td>
+<td style="text-align: left;">Enforced via <strong>CLFs</strong> (Control Lyapunov Functions).</td>
 </tr>
-
-<tr data-index="1" data-listing-file-modified-sort="1763977756745" data-listing-reading-time-sort="5" data-listing-word-count-sort="839" data-listing-title-sort="Module 3 Safe control" data-listing-filename-sort="Lectures5.ipynb">
-<td>
-<a href="./Notes/Lectures5.html" class="title listing-title">Module 3 Safe control</a>
-</td>
-<td>
-<span class="listing-date">&nbsp;</span>
-</td>
-
+<tr class="even">
+<td style="text-align: left;">Ensures <strong>forward invariance</strong> of a safe set <span class="math inline">\(C = \{x: h(x) \ge 0\}\)</span>.</td>
+<td style="text-align: left;">Ensures <strong>convergence</strong> to a desired equilibrium (e.g., <span class="math inline">\(x=0\)</span>).</td>
 </tr>
-
+<tr class="odd">
+<td style="text-align: left;">“Bad things” (e.g., collisions) <strong>never occur</strong>.</td>
+<td style="text-align: left;">“Good things” <strong>eventually happen</strong>.</td>
+</tr>
 </tbody>
 </table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<hr>
+<section id="key-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="key-comparison">Key Comparison</h3>
+<ul>
+<li><strong>CBF:</strong> Guarantees the system never leaves <span class="math inline">\(C\)</span>.</li>
+<li><strong>CLF:</strong> Guarantees the system converges to a target point.</li>
+</ul>
+</section>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
