@@ -148,6 +148,8 @@ window.Quarto = {
   <li><a href="#stability-analysis-via-linearization" id="toc-stability-analysis-via-linearization" class="nav-link" data-scroll-target="#stability-analysis-via-linearization">Stability analysis via Linearization</a></li>
   <li><a href="#lyaponovs-method" id="toc-lyaponovs-method" class="nav-link" data-scroll-target="#lyaponovs-method">Lyaponov’s method</a></li>
   <li><a href="#lasalles-theorem" id="toc-lasalles-theorem" class="nav-link" data-scroll-target="#lasalles-theorem">LaSalle’s Theorem</a></li>
+  <li><a href="#exponential-stability-uing-lyapunovs-method" id="toc-exponential-stability-uing-lyapunovs-method" class="nav-link" data-scroll-target="#exponential-stability-uing-lyapunovs-method">Exponential stability uing Lyapunov’s method</a></li>
+  <li><a href="#pertubed-systems" id="toc-pertubed-systems" class="nav-link" data-scroll-target="#pertubed-systems">Pertubed systems</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -375,6 +377,7 @@ f(x) = 0
 </div>
 </div>
 <p>When all eigenvales of A saitfisy <span class="math inline">\(\text{Re}[\lambda_i] \le 0\)</span>, A is called a Hurwitz matrix</p>
+<p>::: {.callout-tip title=” Hurwitz} Whenever a matrix is Hurwitz the equilibrium point is exponentially and asymptotically stable :::</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Exponential stability">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -521,6 +524,21 @@ A = \left. \frac{\partial f}{\partial x} \right|_{x=0}
 <p>The conditions of Lyapunov’s theorem are only <strong>sufficient</strong>. This means that when (asymptotic) stability cannot be proved using Lyapunov theorem, it does not mean that the equilibrium point is unstable. It only means that it cannot be established by using this Lyapunov function candidate.</p>
 </div>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Choosing functions">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Choosing functions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If no Lyapunov function is given always start with a variant on: <span class="math display">\[
+V=\frac{x_1^2+x_2^2}{2}
+\]</span></p>
+</div>
+</div>
 </section>
 <section id="lasalles-theorem" class="level2">
 <h2 class="anchored" data-anchor-id="lasalles-theorem">LaSalle’s Theorem</h2>
@@ -567,6 +585,42 @@ S = \{x \in D \mid \dot{V}(x) = 0\}
 \]</span> for all time. Then <span class="math inline">\(x = 0\)</span> is <strong>asymptotically stable</strong>.</p>
 </div>
 </div>
+</section>
+<section id="exponential-stability-uing-lyapunovs-method" class="level2">
+<h2 class="anchored" data-anchor-id="exponential-stability-uing-lyapunovs-method">Exponential stability uing Lyapunov’s method</h2>
+<div class="callout callout-style-default callout-note callout-titled" title="Theorem 3.6 (Exponential Stability)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Theorem 3.6 (Exponential Stability)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Let <span class="math inline">\(f(x)\)</span> be a locally Lipschitz function defined over a domain <span class="math inline">\(D \subset \mathbb{R}^n\)</span>, <span class="math inline">\(0 \in D\)</span>. Let <span class="math inline">\(V(x)\)</span> be a continuously differentiable function such that: <span class="math display">\[
+k_1\|x\|^a \le V(x) \le k_2\|x\|^a, \quad \dot{V}(x) \le -k_3\|x\|^a
+\]</span> for all <span class="math inline">\(x \in D\)</span>, where <span class="math inline">\(k_1, k_2, k_3\)</span>, and <span class="math inline">\(a\)</span> are positive constants. Then, the origin is an <strong>exponentially stable</strong> equilibrium point of <span class="math inline">\(\dot{x} = f(x)\)</span>. If the assumptions hold globally, the origin is <strong>globally exponentially stable</strong>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Theorem 3.7 (Hurwitz and the Lyapunov Equation)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Theorem 3.7 (Hurwitz and the Lyapunov Equation)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A matrix <span class="math inline">\(A\)</span> is <strong>Hurwitz</strong> if and only if for every <strong>positive definite symmetric matrix</strong> <span class="math inline">\(Q = Q^T &gt; 0\)</span> there is a <strong>positive definite symmetric matrix</strong> <span class="math inline">\(P = P^T &gt; 0\)</span> that satisfies the <strong>Lyapunov equation</strong>: <span class="math display">\[
+PA + A^T P = -Q
+\]</span> Moreover, if <span class="math inline">\(A\)</span> is Hurwitz, then <span class="math inline">\(P\)</span> is the unique solution.</p>
+</div>
+</div>
+</section>
+<section id="pertubed-systems" class="level2">
+<h2 class="anchored" data-anchor-id="pertubed-systems">Pertubed systems</h2>
 
 
 </section>

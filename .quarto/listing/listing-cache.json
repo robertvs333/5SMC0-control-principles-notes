@@ -2,7 +2,8 @@
   "listingMap": {
     "index.qmd": [
       "Notes/Lecture*.ipynb",
-      "Notes/Project*.ipynb"
+      "Notes/Project*.ipynb",
+      "Notes/NetworkSystems.ipynb"
     ]
   }
 }
