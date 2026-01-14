@@ -5,6 +5,7 @@ listing:
   contents: 
     - "Notes/Lecture*.ipynb"    # Catches Lecture1.ipynb, Lecture2.ipynb, etc.
     - "Notes/Project*.ipynb"    # Catches Project files if you have them
+    - "Notes/NetworkSystems.ipynb
   type: table             # Options: default, table, grid
   sort: "filename"        # Sorts by file name (Lecture1, Lecture2...)
   fields: [title, date]
