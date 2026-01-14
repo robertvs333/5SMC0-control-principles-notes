@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5SMC0 Control Principles – 5SMC0 Control principles for engineering systems</title>
+<title>Network systems – 5SMC0 Control principles for engineering systems</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,67 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -140,7 +80,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">5SMC0 Control principles for engineering systems</span>
     </a>
   </div>
@@ -151,7 +91,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -170,8 +110,7 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-the-course" id="toc-welcome-to-the-course" class="nav-link active" data-scroll-target="#welcome-to-the-course">Welcome to the Course</a></li>
-  <li><a href="#course-material" id="toc-course-material" class="nav-link" data-scroll-target="#course-material">Course Material</a></li>
+  <li><a href="#graph-theory" id="toc-graph-theory" class="nav-link active" data-scroll-target="#graph-theory">Graph theory</a></li>
   </ul>
 </nav>
     </div>
@@ -180,8 +119,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">5SMC0 Control Principles</h1>
-<p class="subtitle lead">Course Overview &amp; Lectures</p>
+<h1 class="title">Network systems</h1>
 </div>
 
 
@@ -198,68 +136,48 @@ window.Quarto = {
 </header>
 
 
-<section id="welcome-to-the-course" class="level2">
-<h2 class="anchored" data-anchor-id="welcome-to-the-course">Welcome to the Course</h2>
-<p>Welcome to the <strong>Control Principles for Engineered Systems</strong> course hub. Below you will find the lecture notes and computational notebooks used in class.</p>
+<section id="graph-theory" class="level2">
+<h2 class="anchored" data-anchor-id="graph-theory">Graph theory</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Screenshot 2025-12-18 at 13.49.01.png" class="img-fluid figure-img"></p>
+<figcaption>“Graph theory”</figcaption>
+</figure>
+</div>
+<p>A graph is weighted if each edge has an associated weight. A Parallel edges are two or more edges linking the same (ordered) pair of nodes. Self-loops are edges taht starts and ends at the same node. A graph is simple as it does not have parallel edges and self-loops. This course only considers simple graphs. A undirected graph is connected if there is a path from i to j, for all i,j in V. It is an undirected graph when the edges do not have a direction.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="3 levels of connection">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>3 levels of connection
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Strongly connected</strong>: if each node can reach all the other nodes via directed paths. <strong>quasi-strongly connected</strong> if there is a node (called <em>root node</em>) that can reach all the other nodes via directed paths <strong>Weakly connected</strong> If the underlying undirected graphs is connected</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Screenshot 2025-12-18 at 14.05.00.png" class="img-fluid figure-img"></p>
+<figcaption>“Adjacency matrix”</figcaption>
+</figure>
+</div>
+<p>In this image it is also shown that when it is a weighted graph that the number should be the weight. If no weight is given the number should be 1. If a matrix is symmetric that also means that it is a undirected graph. This is only for simple graphs. A diagonal degree matrix D shows how many edges there are from node <em>i</em> with their weights so it is the sum of the weights of the edges from node <em>i</em>.</p>
+<p>Incidence matrix are different these show which node is connected by what edge.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/Screenshot 2025-12-18 at 14.15.52.png" class="img-fluid figure-img"></p>
+<figcaption>“Incidence matrix: H”</figcaption>
+</figure>
+</div>
+<p>For assignments always use the H which is defined here. Not the transpose of this. For the undirected graph you can just randomly assign directions. In the end that doesn’t matter.</p>
+
+
 </section>
-<section id="course-material" class="level2">
-<h2 class="anchored" data-anchor-id="course-material">Course Material</h2>
 
-
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-
-<th>
-Title
-</th>
-
-<th>
-Date
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-listing-date-sort="1698192000000" data-listing-file-modified-sort="1768382234863" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10" data-listing-word-count-sort="1808" data-listing-title-sort="Module 2: Stability Analysis" data-listing-filename-sort="Lecture3.ipynb">
-<td>
-<a href="./Notes/Lecture3.html" class="title listing-title">Module 2: Stability Analysis</a>
-</td>
-<td>
-<span class="listing-date">Oct 25, 2023</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-listing-file-modified-sort="1768382234863" data-listing-reading-time-sort="5" data-listing-word-count-sort="839" data-listing-title-sort="Module 3 Safe control" data-listing-filename-sort="Lecture5.ipynb">
-<td>
-<a href="./Notes/Lecture5.html" class="title listing-title">Module 3 Safe control</a>
-</td>
-<td>
-<span class="listing-date">&nbsp;</span>
-</td>
-
-</tr>
-
-<tr data-index="2" data-listing-file-modified-sort="1768382234863" data-listing-reading-time-sort="2" data-listing-word-count-sort="262" data-listing-title-sort="Network systems" data-listing-filename-sort="NetworkSystems.ipynb">
-<td>
-<a href="./Notes/NetworkSystems.html" class="title listing-title">Network systems</a>
-</td>
-<td>
-<span class="listing-date">&nbsp;</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
